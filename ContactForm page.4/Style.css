@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.contact{
+	background-color: black;
+	overflow:hidden;
+}
+.toppart{
+	height: 150px;
+	background-color: black;
+	color:white;
+	width: 100%;
+	align-items:center;
+}
+.tophead{
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+	
+}
+.social-icons{
+	width: 20%;
+	margin:auto;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.fab{
+	font-size: 60px;
+	color:white;
+	border-radius: 2px;
+}
+
+.adjustit{
+	width: 80%;
+	margin:auto;
+}
+
+
+.downpart{
+	width: 80%;
+	overflow: none;
+	margin:auto;
+	display: inline-flex;
+	/*padding-top:20px;
+	padding-left:100px;
+	padding-right:100px;*/
+	padding: 20px 100px;
+	justify-content: space-around;
+
+
+
+}
+.oneside{
+	width: 50%;
+	padding: 30px;
+  background-color: lightgray;
+
+}
+
+.form,.form-items
+{
+  width: 100%;
+}
+.sidehead{
+	font-size: 25px;
+	text-align: left;
+	margin: 10px;
+	font-family: 'Satisfy', cursive;
+}
+.form-items .input{
+  width: 100%;
+  margin-bottom: 13px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  border: 0px;
+  border-bottom: 2px solid black;
+  box-shadow: 0 0 3px;
+  outline: none;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.form-items .input.message{
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  resize: none;
+}
+.form-items .fas{
+	position: relative;
+	top:-45px;
+	left:4px;
+}
+.submit{
+  background: #000;
+  text-align: center;
+  color: #fff;
+  float: right;
+  width: 100px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.btn .fas{
+	font-size: 20px;
+}
+
+
+.anotherside{
+	margin-left: 20px;
+	width: 50%;
+	background-color: black;
+	height: 50%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	padding:15px;
+
+}
+.anotherside .bigmail .fas{
+	font-size: 80px;
+	color:white;
+	margin: 15px;
+}
+.shortinfo{
+	font-family: 'Satisfy', cursive;
+}
+.footer{
+	height: 50px;
+	padding:15px;
+	font-size:25px;
+	background-color: black;
+	text-align: center;
+	align-items:center;
+	color:white;
+	overflow:hidden;
+}

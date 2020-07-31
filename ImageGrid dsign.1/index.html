@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.header h1{
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: teal;
+  text-align: center;
+}
+.header {
+  padding: 25px;
+}
+.header p{
+  font-size: 20px;
+
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 3px;
+  margin: auto;
+  width: 70%;
+}
+
+.column {
+  -ms-flex: 25%; 
+  flex:25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <h1>Photography</h1>
+  <p>Here are some of Beautiful picture that i have capture.</p>
+</div>
+<div class="row"> 
+  <div class="column">
+    <img src="./g2.jpeg" style="width:100%">
+    <img src="./b4.jpeg" style="width:100%">
+    <img src="./b2.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./b2.jpeg" style="width:100%">
+    <img src="./b4.jpeg" style="width:100%">
+    <img src="./g1.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="./b1.jpeg" style="width:100%">
+    <img src="./b3.jpeg" style="width:100%">
+    <img src="./g1.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./g2.jpeg" style="width:100%">
+    <img src="./b4.jpeg" style="width:100%">
+    <img src="./b3.jpeg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

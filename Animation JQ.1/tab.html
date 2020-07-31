@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide type animation </title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <br><br><br><br>
+    <div class="container">
+   
+  <div class="slides">
+    <div class="slide">
+      <a href="#">Yeuta</a>
+      <div class="content">
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, illo? Natus laboriosam tempore autem. Commodi, fuga deleniti rerum ratione ut veniam neque facere, tenetur, officiis molestias aliquid sed recusandae deserunt.
+       Nulla recusandae quidem explicabo, aperiam doloribus adipisci officiis nisi tenetur nostrum nam incidunt mollitia earum iste labore culpa quod nobis asperiores aut odit aliquam molestiae. Esse vero quos magni nostrum!
+       Sint corrupti laborum, recusandae labore aliquam fugiat saepe nobis consequatur expedita accusantium. Aliquam sed cumque, quos ullam rerum, amet nesciunt delectus velit quam nulla ab. Fugiat voluptatum ipsum id officiis?
+      </div>
+    </div>
+    
+    <div class="slide">
+      <a href="#">Arko</a>
+      <div class="content">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dolorem veritatis quas deleniti aliquam enim ullam, illum magnam facilis at aperiam explicabo iste nam ut voluptate saepe perferendis natus blanditiis.
+      Iure minus sed dolore laudantium dolorem odit illum aspernatur nostrum, aliquid eveniet vero. Ratione repellat obcaecati iste officiis voluptas cupiditate facere aspernatur! Voluptate nesciunt, corrupti incidunt animi nam deserunt nostrum!
+      Harum saepe quo nemo hic, quam tenetur quis ab quaerat a dignissimos odit aut sint optio eos fuga error at tempore pariatur alias culpa provident reiciendis consequatur labore? Corporis, enim.</div>
+    </div>
+    
+    <div class="slide">
+      <a href="#">Jhan Arko</a>
+      <div class="content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae omnis tempora cupiditate! Eveniet, suscipit aperiam? Sequi fuga deleniti delectus, aspernatur reprehenderit alias. Obcaecati corporis hic eligendi vero odio nostrum quae.
+      Accusantium officiis culpa temporibus. Culpa ea corrupti qui explicabo enim! Hic incidunt iste, doloremque unde ea culpa quibusdam sunt enim, tenetur cumque perspiciatis repellat aut eaque eum sapiente dignissimos fuga!
+      Amet eius animi dignissimos, doloremque ex perferendis! Iste veritatis ullam asperiores, odio consequuntur aliquid exercitationem eum ratione sed aperiam minima deleniti, ea fugiat? Exercitationem incidunt esse dignissimos eaque iure adipisci!</div>
+    </div>
+  </div>
+</div>
+<script>
+    $('.slide a').click(function () {
+  $('.slide.active').removeClass('active');
+  $(this).closest('.slide').addClass('active');
+  return false;
+});
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black And White</title>
+</head>
+<style >
+	*{
+		margin: 0;
+		padding: 0;
+
+	}
+	body{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+
+	}
+	.box{
+		position: relative;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+	}
+	.box img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+	}
+	.box:nth-child(2) img{
+		filter: grayscale(1) contrast(5);
+	}
+	.box:nth-child(2) img:nth-child(2){
+		filter: grayscale(2) contrast(3) brightness(1);
+		mix-blend-mode: hard-light;
+	}
+</style>
+<body>
+	<div class="box">
+		<img src="./xc.JPG">
+	</div>
+	<div class="box">
+		<img src="./xc.JPG">
+		<img src="./xc.JPG">
+
+	</div>
+</body>
+</html>

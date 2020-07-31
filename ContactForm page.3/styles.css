@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: teal;
+}
+
+.contact-us{
+  width: 270px;
+  background: #fff;
+  padding: 40px;
+  margin: 100px auto;
+  border-radius: 25px;
+  position: relative;
+}
+
+.title h1{
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .input{
+  width: 100%;
+  margin-bottom: 13px;
+  padding: 12px 35px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  border-bottom: 2px solid gray;
+  box-shadow: 0 0 3px;
+  outline: none;
+  border-radius: 15px;
+}
+
+.form-items .input.message{
+  height: 125px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  padding: 15px 15px;
+  resize: none;
+}
+
+.btn{
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.btn:hover{
+  background-color: gray;
+  transition: 0.5s ease-in-out;
+}
+.btn .fas{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+.endhead{
+  text-align: center;
+  border-top: 2px solid black;
+  font-family: 'Satisfy', cursive;
+}
+
+.social-icons{
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+}
+
+
+.social-icons div .fab{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 25px;
+}
+.social-icons div:hover{
+  background-color: green;
+}
+/*
+.social-icons div.facebook{
+  background: #5178d9;
+}
+
+.social-icons div.twitter{
+  background: #41caf6;
+}
+
+.social-icons div.google{
+  background: #fb4f4f;
+}*/

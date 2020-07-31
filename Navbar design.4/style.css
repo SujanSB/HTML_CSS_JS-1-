@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+  }
+  
+  .navbar{
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    width: 100%;
+  }
+  .brand{
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    background-size: contain;
+    width: 180px;
+    height: 18px;
+    float: left;
+    margin-left:20px;
+  }
+  .menu{
+    position: absolute;
+    right: 20px;
+  }
+  .menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  .menu a:hover{
+    color: #6ab04c;
+  }
+  .header{
+    width: 100%;
+    height: 600px;
+    background: url(bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+  }
+  .btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+  }
+  .btn:hover > span{
+    background: #6ab04c;
+  }
+  .btn span{
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+  }
+  p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+  
+  }
+  @media only screen and (max-width : 600px) {
+    .navbar{
+      overflow: visible;
+    }
+    .menu{
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background: #f1f1f1;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .btn{
+      display: block;
+      cursor: pointer;
+    }
+    .show{
+      max-height: 500px;
+    }
+  }
+  
+  

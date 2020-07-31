@@ -1,0 +1,76 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: rgb(6, 9, 224);
+    color: rgb(237, 243, 236);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.container > h1, .title{
+    font-family: cursive;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+}
+.container >h1, .container >p{
+    text-align: center;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+.service{
+    margin-bottom:0px;
+    font-size: 16px;
+    padding: 35px 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: cyan 0.3s ease-in;
+    width: 200px;
+    
+    /* border: 2px solid rgb(117, 3, 3); */
+}
+.service:hover{
+    background-color: magenta;
+    transform: translateY(-5px);
+}
+.service::before{
+    content: '';
+    border-width:20px;
+    border-style:solid;
+    border-color: midnightblue rgb(81, 255, 0) rgba(1,1,1,0.4) rgba(0,0,0,0.4);
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    transition: right 0.3s ease-out,
+                top 0.3s ease-out ;
+}
+.service:hover::before{
+    right: 0;
+    top: 0;
+     
+}
+.service > i{
+    display: block;
+    color: mediumspringgreen;
+    font-size: 4rem;
+    margin-bottom:0.9rem;
+}
+.title{
+    text-transform: capitalize;
+}
+.description{
+    text-align:justify;
+
+}

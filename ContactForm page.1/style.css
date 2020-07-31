@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    background:linear-gradient(to right ,#ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color:transparent;
+}
+body{
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    font-weight: bold;
+        
+}
+.contact-box{
+    background-color: indigo;
+    color: rgb(8, 239, 247);
+    display:flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+.contact-right{
+    flex-basis:40%;
+    padding: 40px;
+    background-color: rgb(192, 4, 4);
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+} 
+input{
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 1px solid #ffa709;
+    outline: none;
+    padding-bottom: 5px;
+} 
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ffa709;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 7px;
+    display: block;
+    background:linear-gradient(to right ,#ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color:transparent;
+}
+button{
+    background:linear-gradient(to right ,#ff105f, #ffad06);
+    color:#fff;
+    width: 80px;
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 20px;  
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}

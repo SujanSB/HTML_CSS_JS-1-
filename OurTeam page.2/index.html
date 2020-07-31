@@ -1,0 +1,214 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Our Team</title>
+     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap" rel="stylesheet">
+     <style>
+    
+          
+   
+    html {
+  height: 100%;
+}
+body {
+  background-color: #white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+    overflow: hidden;
+}
+section{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.vitra{
+  padding: 30px;
+  width: 75%;
+  margin-top:100px; 
+  margin: auto;
+}
+.tauko{
+  font-family: 'Krona One', sans-serif;
+  color: black;
+  text-align:center;
+  padding: 5px;
+  font-size: 20px;
+
+}
+.cards{
+   display: flex;
+   justify-content: space-between;
+ 
+}
+figure.snip {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family:  'Roboto Condensed', sans-serif;;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 210px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+
+}
+
+figure.snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip:before,
+figure.snip:after {
+  position: absolute;
+  width: 100%;
+  background: #000000;
+  height: 0px;
+  display: block;
+  content: '';
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip:before {
+  top: 0;
+}
+
+figure.snip:after {
+  bottom: 0;
+}
+
+figure.snip img {
+  max-width: 50%;
+  margin-bottom: -5px;
+}
+
+figure.snip figcaption {
+  position: relative;
+  background: #ffffff;
+}
+
+figure.snip h3,
+figure.snip p {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+figure.snip h3 {
+  width: 70%;
+  padding: 12px 15px;
+  background: #333333;
+  text-transform: uppercase;   
+  transform: translateY(-50%) rotate(0deg) scale(1);
+}
+
+figure.snip p {
+  font-size: 0.9em;
+  font-weight: 500;
+  background: #ffffff;
+  color: #4d4d4d;
+  padding: 10px 40px 40px;
+}
+
+figure.snip a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+figure.snip.blue h3,
+figure.snip.blue:before,
+figure.snip.blue:after {
+  background: #2980b9;
+}
+
+figure.snip.red h3,
+figure.snip.red:before,
+figure.snip.red:after {
+  background: #c0392b;
+}
+
+figure.snip.yellow h3,
+figure.snip.yellow:before,
+figure.snip.yellow:after {
+  background: #f39c12;
+}
+ 
+
+figure.snip:hover figcaption h3,
+figure.snip.hover figcaption h3 {   
+  transform: translateY(-50%) rotate(-8deg) scale(1.1);
+}
+
+figure.snip:hover:before,
+figure.snip.hover:before,
+figure.snip:hover:after,
+figure.snip.hover:after {
+  height: 10px;
+}
+
+
+     
+     </style>
+ </head>
+ <body>
+     <section>
+      <div class="vitra">
+        <div class="tauko">
+          <h1>Meet Our Team : Work untill End</h1>
+          <p>End never comes</p>
+        </div>
+      <div class="cards">
+     <figure class="snip yellow">
+         <img src="./b4.jpeg" alt="">
+         <figcaption>
+             <h3>Santosh Acharya</h3>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis quas quasi eius    Consequatur corporis quas quasi eius                  
+             </p>
+         </figcaption>
+         <a href=""></a>
+     </figure>
+     
+      <figure class="snip red hover">
+         <img src="./b6.jpg" alt="">
+         <figcaption>
+             <h3>Sujan Sharma</h3>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis quas quasi eius     Consequatur corporis quas quasi eius                  
+             </p>
+         </figcaption>
+         <a href=""></a>
+     </figure>
+     
+      <figure class="snip blue">
+         <img src="./b4.jpeg" alt="">
+         <figcaption>
+             <h3>Shashank</h3>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis quas quasi eius     Consequatur corporis quas quasi eius                  
+             </p>
+         </figcaption>
+         <a href=""></a>
+     </figure>
+   </div>
+     </div>
+     </section>
+     
+ </body>
+ </html>

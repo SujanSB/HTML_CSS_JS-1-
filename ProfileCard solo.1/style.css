@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background:#eee;
+    display: flex;
+    color: #fff;
+
+}
+.card{
+    width: 380px;
+    overflow: hidden;
+    background: linear-gradient(#7d6cfc,#c635ea);
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgb(2, 13, 47);
+    display: flex;
+    flex-direction: column;
+}
+.card-image img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+}
+.profile-image img{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    z-index: 1;
+    top: -85px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    margin-bottom: -70px;
+
+}
+.card-image img:hover,
+.profile-image img:hover{
+    transform:scale(1.1) ;
+}
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.card-content p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px  5px 20px;
+    border-bottom: 2px solid #fff;
+    border-radius: 10px;
+
+}
+.social-link{
+    margin: 10px;
+
+}
+.icons{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+.icons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    color: #131212;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    padding: 10px;
+    margin: 10px;
+  }
+.icons a:hover{
+    background-color: rgb(1, 5, 17);
+    color:#fff;
+    transform: rotate(360deg);
+  
+  }
+.icons a i{
+    transition: 0.3s ease-in;
+  }

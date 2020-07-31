@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>
+    This is awesome
+  </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a href="#home"><h1>Invalid SB</h1></a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#hire">Hire Me</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+
+  <section id="home"></section>
+   <section id="about"></section>
+    <section id="services"></section>
+     <section id="works"></section>
+</body>
+<script >
+  const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
+const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
+
+hamburger_icon.addEventListener('click', () => {
+  nav_list.classList.toggle('open');
+  hamburger_icon.classList.toggle('active');
+});
+</script>
+</html>

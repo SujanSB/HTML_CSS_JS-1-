@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container nav.desk,
+.container nav.mob{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #4b3636;
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav.desk ul {
+  list-style: none;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+nav.desk ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+
+nav.desk ul li:hover,
+nav.mob ul li:hover{
+  background: #a3ada5;
+}
+
+nav.desk ul li.active,
+nav.mob ul li.active{
+  background: #a3ada5;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header{
+  height: 100vh;
+  background-color: indigo;
+}
+.mob {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  nav.desk {
+    display: none;
+  }
+
+  nav.mob {
+    display: block;
+  }
+
+  .header .title {
+    font-size: 30px;
+  }
+  
+  
+  .hamburger-btn {
+    position: relative;
+  }
+
+  .hamburger-btn .fa-bars,
+  .hamburger-btn .fa-times {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mob ul{
+    margin-top: 60px;
+    background: #364a4b;
+    display: none;
+  }
+
+  .mob li {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .mob ul.active {
+    display: block;
+  }
+}
+#About{
+  height: 100vh;
+  background-color:teal;
+}
+
+#Work{
+  height: 100vh;
+  background-color: yellow;
+}
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oops Page not found</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing:border-box;
+		font-family: 'Poppins', sans-serif;
+	}
+	body{
+		background: linear-gradient(45deg, #8500ff, #5acaff); 
+		/*background-color: black;*/
+	}
+	#container{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url('p404.png'),#000e;/*
+		background-visibility: 0.5;*/
+		box-shadow: 0 15px 30px ;
+	}
+	#container .content{
+		max-width: 800px;
+		color: white;
+		text-align: center;
+	}
+	#container .content h1{
+		font-size: 180px;
+		font-weight: bolder;
+		-webkit-text-stroke-width:3px;
+		-webkit-text-stroke-color:cyan;
+
+
+	}
+	#container .content h3{
+		font-size: 30px;
+		background-color: white;
+		margin-bottom: 10px;
+		color: black;
+		border-radius: 10px;
+	}
+	#container .content p{
+		font-size: 20px;
+
+	}
+	#container .content .backlink{
+		padding:20px;
+	}
+	#container .content a{
+		position: relative;
+		text-decoration: none;
+		font-size: 20px;
+		background-color: white;
+		color: black;
+		padding: 5px 25px;
+		margin: 20px;
+		border-radius: 10px;
+		border:2px solid cyan;
+
+	}
+
+</style>
+<body>
+	<div id="container">
+		<div class="content">
+			<h1> 404</h1>
+			<h3>Oops ! Looks like You have Lost Yourself</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<div class="backlink">
+				<a href="#">Go Back</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var box = document.getElementById('container');
+		window.onmousemove=function(e){
+			var x = -e.clientX/5,
+				y = -e.clientY/5;
+			box.style.backgroundPositionX =x+ 'px';
+			box.style.backgroundPositionY =y+ 'px';
+		}
+	</script>
+</body>
+</html>
